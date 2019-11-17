@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <style>
+      body {
+        background-color: #666 !important;
+      }
+      h5 {
+        color: #00b !important;
+      }
+      .img-timeline-1 {
+        max-width: 125px !important;
+        max-height: auto !important;
+      }
+      hr {
+        border-bottom: 2px solid white !important;
+      }
+      footer {
+        background-color: #000 !important;
+      }
+    </style>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- Place your kit's code here -->
+    <script
+      src="https://kit.fontawesome.com/131a82aa8d.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>FCC Tribute Page | Ernest Hemingway</title>
+  </head>
+  <body>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="myModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Large Image</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <span id="modalImage"
+              ><img
+                class="mr-3 img-fluid"
+                src="https://pics.me.me/is-all-the-better-if-hes-a-bou-in-girls-40353354.png"
+                alt="it's great boy in girls' clothes"
+            /></span>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <a
+              class="btn btn-primary"
+              target="_blank"
+              href="https://me.me/i/is-all-the-better-if-hes-a-bou-in-girls-2434fc9ae5f84b28ba55f2b268b42ecb"
+            >
+              Original Site</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="myModal2"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Large Image</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <span id="modalImage"
+              ><img
+                class="mr-3 img-fluid"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Ernest_Hemingway_in_Milan_1918_retouched_3.jpg/255px-Ernest_Hemingway_in_Milan_1918_retouched_3.jpg"
+                alt="Ernest Hemingway in Milan in uniform"
+            /></span>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              href="https://en.wikipedia.org/wiki/Ernest_Hemingway"
+            >
+              Original Site
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="myModal3"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Large Image</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <span id="modalImage"
+              ><img
+                class="mr-3 img-fluid"
+                src="https://www.usflags.com/pub/media/catalog/product/cache/dcb81d4ae761db357a9a38181bc1eb2e/0/0/0002263.jpeg"
+                alt="it's great boy in girls' clothes"
+            /></span>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              href="https://www.usflags.com/france-flag.html"
+            >
+              Original Site
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top border-bottom border-light"
+    >
+      <a class="navbar-brand" href="https://www.widesvs2.com">WidesVs2</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="https://www.widesvs2.com/work.html"
+              >Back to Projects</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#main">Jump to Top</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#timeline">Jump to Timeline</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">Jump to Bottom</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="container-fluid" id="main">
+      <h1
+        class="display-3 text-center text-white border-bottom border-white"
+        id="title"
+      >
+        Ernest Hemingway
+      </h1>
+      <div id="img-div" class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <img
+              class="mx-auto d-block img-fluid img-thumbnail"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Ernest_Hemingway_in_Milan_1918_retouched_3.jpg/255px-Ernest_Hemingway_in_Milan_1918_retouched_3.jpg"
+              alt="ernest hemingway in uniform 1918"
+              id="image"
+            />
+          </div>
+          <div class="col-sm-4">
+            <img
+              class="mx-auto d-block img-fluid img-thumbnail"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/ErnestHemingway.jpg/330px-ErnestHemingway.jpg"
+              alt="ernest hemingway working on book"
+              id="image1"
+            />
+          </div>
+          <div class="col-sm-4">
+            <img
+              class="mx-auto d-block img-fluid img-thumbnail"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Ernest_and_Mary_Hemingway_on_safari%2C_1953-54.jpg/285px-Ernest_and_Mary_Hemingway_on_safari%2C_1953-54.jpg"
+              alt="ernest hemingway and wife mary on safari in africa"
+              id="image2"
+            />
+          </div>
+        </div>
+        <aside id="img-caption" class="text-center text-white">
+          <em
+            >(left)Hemingway in uniform in Milan, 1918. (Center)Hemingway
+            working on his book For Whom the Bell Tolls at the Sun Valley Lodge,
+            Idaho, in December 1939. (Right)Hemingway and Mary in Africa before
+            the two plane accidents.</em
+          >
+        </aside>
+      </div>
+      <section class="jumbotron text-center bg-dark text-white">
+        <h1 class="display-4">Hemingway's Life</h1>
+        <p class="lead">
+          Here you can read a brief summary of Hemingway's Life
+        </p>
+        <aside>
+          <em
+            >This section of text taken from Wikipedia strictly for academic use
+            to complete project for
+            <a target="_blank" href="https://www.freecodecamp.org">FCC</a>.
+            Original credit goes to
+            <a target="_blank" href="https://www.wikipedia.org">Wikipedia</a
+            >.</em
+          >
+        </aside>
+        <hr class="my-4" />
+        <p id="tribute-info">
+          Ernest Miller Hemingway (July 21, 1899 – July 2, 1961) was an American
+          journalist, novelist, short-story writer, and sportsman. His
+          economical and understated style—which he termed the
+          <a href="https://en.wikipedia.org/wiki/Iceberg_theory" target="_blank"
+            >iceberg theory</a
+          >—had a strong influence on 20th-century fiction, while his
+          adventurous lifestyle and his public image brought him admiration from
+          later generations. Hemingway produced most of his work between the
+          mid-1920s and the mid-1950s, and he won the Nobel Prize in Literature
+          in 1954. He published seven novels, six short-story collections, and
+          two nonfiction works. Three of his novels, four short-story
+          collections, and three nonfiction works were published posthumously.
+          Many of his works are considered classics of
+          <a
+            target="_blank"
+            href="https://en.wikipedia.org/wiki/American_literature"
+          >
+            American literature.</a
+          >
+        </p>
+        <p>
+          Hemingway was raised in
+          <a
+            target="_blank"
+            href="https://en.wikipedia.org/wiki/Oak_Park,_Illinois"
+          >
+            Oak Park, Illinois.</a
+          >
+          After high school, he was a reporter for a few months for
+          <a
+            target="_blank"
+            href="https://en.wikipedia.org/wiki/The_Kansas_City_Star"
+            ><em> The Kansas City Star</em></a
+          >
+          before leaving for the
+          <a
+            target="_blank"
+            href="https://en.wikipedia.org/wiki/Italian_Front_(World_War_I)"
+            >Italian Front</a
+          >
+          to enlist as an ambulance driver in World War I. In 1918, he was
+          seriously wounded and returned home. His wartime experiences formed
+          the basis for his novel
+          <a
+            target="_blank"
+            href="https://en.wikipedia.org/wiki/A_Farewell_to_Arms"
+            ><em> A Farewell to Arms (1929)</em></a
+          >.
+        </p>
+        <p>
+          In 1921, Hemingway married
+          <a
+            target="_blank"
+            href="https://en.wikipedia.org/wiki/Hadley_Richardson"
+            >Hadley Richardson</a
+          >, the first of four wives. They moved to Paris where he worked as a
+          foreign correspondent and fell under the influence of the modernist
+          writers and artists of the 1920s' "<a
+            target="_blank"
+            href="https://en.wikipedia.org/wiki/Lost_Generation"
+            >Lost Generation</a
+          >" expatriate community. His debut novel
+          <a
+            target="_blank"
+            href="https://en.wikipedia.org/wiki/The_Sun_Also_Rises"
+            ><em>The Sun Also Rises</em></a
+          >
+          was published in 1926. He divorced Richardson in 1927 and married
+          <a
+            target="_blank"
+            href="https://en.wikipedia.org/wiki/Pauline_Pfeiffer"
+            >Pauline Pfeiffer</a
+          >; they divorced after he returned from the
+          <a
+            target="_blank"
+            href="https://en.wikipedia.org/wiki/Spanish_Civil_War"
+            >Spanish Civil War</a
+          >, where he had been a journalist. He based
+          <a
+            target="_blank"
+            href="https://en.wikipedia.org/wiki/For_Whom_the_Bell_Tolls"
+            ><em>For Whom the Bell Tolls</em></a
+          >
+          (1940) on his experience there.
+          <a
+            target="_blank"
+            href="https://en.wikipedia.org/wiki/Martha_Gellhorn"
+            >Martha Gellhorn</a
+          >
+          became his third wife in 1940; they separated after he met
+          <a
+            target="_blank"
+            href="https://en.wikipedia.org/wiki/Mary_Welsh_Hemingway"
+            >Mary Welsh</a
+          >
+          in London during
+          <a target="_blank" href="https://en.wikipedia.org/wiki/World_War_II"
+            >World War II</a
+          >. He was present with the troops as a journalist at the
+          <a
+            target="_blank"
+            href="https://en.wikipedia.org/wiki/Normandy_landings"
+            >Normandy landings</a
+          >
+          and the
+          <a
+            target="_blank"
+            href="https://en.wikipedia.org/wiki/Liberation_of_Paris"
+            >liberation of Paris</a
+          >.
+        </p>
+        <p>
+          Hemingway went on safari to Africa shortly after the publication of
+          <a
+            target="_blank"
+            href="https://en.wikipedia.org/wiki/The_Old_Man_and_the_Sea"
+            ><em>The Old Man and the Sea</em></a
+          >
+          (1952), where he was involved in two successive near-fatal plane
+          crashes that left him in pain and ill health for much of the rest of
+          his life. In 1959, he bought a house in
+          <a target="_blank" href="https://en.wikipedia.org/wiki/Ketchum,_Idaho"
+            >Ketchum, Idaho</a
+          >, where he ended his own life in mid-1961.
+        </p>
+        <p class="lead">
+          <a
+            id="tribute-link"
+            class="btn btn-primary btn-lg"
+            target="_blank"
+            href="https://en.wikipedia.org/wiki/Ernest_Hemingway"
+            role="button"
+            >Original Wikipedia Article</a
+          >
+        </p>
+      </section>
+      <section id="timeline" class="container">
+        <h1 class="text-center text-white display-3">Hemingway's Timeline</h1>
+        <p class="lead text-center text-white">
+          A timeline of Ernest hemingway's Life
+        </p>
+        <aside class="text-center text-white">
+          <em
+            >Timeline taken from
+            <a
+              target="_blank"
+              href="https://www.shmoop.com/ernest-hemingway/timeline.html"
+              >shmoop.com</a
+            >. Edited for formatting and accuracy.</em
+          >
+        </aside>
+        <hr />
+        <ul class="list-unstyled text-white">
+          <li class="media mt-5">
+            <i class="fas fa-baby-carriage display-2 mr-5"></i>
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">
+                July 21, 1899: Birth of Ernest Hemingway
+              </h5>
+              Ernest Miller Hemingway is born in Oak Park, Illinois, a place he
+              will later describe as a town of "wide lawns and narrow minds." He
+              is the second of six children of Clarence Hemingway, a doctor, and
+              Grace Hall Hemingway, a music teacher.
+            </div>
+          </li>
+          <li id="modOne" class="media my-4 mt-5">
+            <a data-toggle="modal" data-target="#myModal"
+              ><img
+                id="img-timeline-1"
+                class="img-timeline-1 mr-3 img-fluid"
+                src="https://pics.me.me/is-all-the-better-if-hes-a-bou-in-girls-40353354.png"
+                alt="it's great boy in girls' clothes"
+            /></a>
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">1905: Boy in Girls' Clothes</h5>
+              From his infancy, Hemingway's mother begins a strange habit of
+              dressing her son like a girl, complete with dresses and long hair,
+              and his older sister as a boy, with overalls and cropped hair.
+              When Ernest is six, she finally ends the charade and allows him to
+              cut his long hair. The damage has already been done. In adulthood,
+              his friend John dos Passos will describe Hemingway as the only man
+              he ever knew who truly hated his mother.
+            </div>
+          </li>
+          <li class="media mt-5">
+            <i class="fas fa-graduation-cap display-2 mr-5"></i>
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">Sep 1913: Hemingway in High School</h5>
+              Ernest Hemingway enters Oak Park and River Forest High School. He
+              proves to be an excellent student athlete who boxes, plays
+              football and writes for the school newspaper and yearbook.
+            </div>
+          </li>
+          <li class="media mt-5">
+            <i class="far fa-newspaper display-2 mr-5"></i>
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">1917: Cub Reporter</h5>
+              Hemingway graduates from Oak Park and River Forest High School. He
+              opts not to go to college, instead taking a job as a cub reporter
+              for the <em>Kansas City Star</em> newspaper. The Star's style
+              guidelines influence his writing style for the rest of his career:
+              Use short sentences, short first paragraphs, and vigorous English.
+            </div>
+          </li>
+          <li class="media mt-5">
+            <i class="fas fa-ambulance display-2 mr-5"></i>
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">Apr 30, 1918: WW1 Ambulance Driver</h5>
+              Hemingway leaves the newspaper and attempts to join the U.S. Army
+              so that he can fight in World War I. The Army rejects him because
+              of poor eyesight, so he volunteers as a driver with the Red Cross
+              Ambulance Corps.
+            </div>
+          </li>
+          <li class="media mt-5">
+            <a data-toggle="modal" data-target="#myModal2"
+              ><img
+                class="mr-3 img-timeline-1 img-fluid"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Ernest_Hemingway_in_Milan_1918_retouched_3.jpg/255px-Ernest_Hemingway_in_Milan_1918_retouched_3.jpg"
+                alt="Generic placeholder image"
+            /></a>
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">
+                Jul 8, 1918: Hemingway Wounded in Battle
+              </h5>
+              While passing out supplies to soldiers in Italy, Hemingway is
+              seriously injured by a trench mortar and machine gun. The blast
+              leaves shell fragments in his legs. The Italian government awards
+              him a Silver Medal of Military Valor for dragging a wounded
+              Italian soldier to safety after the attack, but his career as an
+              ambulance driver is over. While recuperating in a Milan hospital,
+              Hemingway falls in love with an American nurse six years his
+              senior named Agnes von Kurowsky. They make plans for her to join
+              him in the United States.
+            </div>
+          </li>
+          <li class="media mt-5">
+            <i class="fas fa-heart-broken display-2 mr-5"></i>
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">
+                Jan 1919: End of Affair with Agnes von Kurowsky
+              </h5>
+              Hemingway returns to the United States. Agnes soon writes to him
+              to tell him that she has fallen in love with an Italian officer.
+              Hemingway is heartbroken. Their romance inspires the relationship
+              in
+              <a
+                target="_blank"
+                href="https://www.amazon.com/Farewell-Arms-Ernest-Hemingway/dp/0684801469"
+                ><em>A Farewell to Arms</em></a
+              >.
+            </div>
+          </li>
+          <li class="media mt-5">
+            <i class="far fa-newspaper display-2 mr-5"></i>
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">
+                1920: Reporter for <em>Toronto Star</em>
+              </h5>
+              Hemingway moves to Toronto, Ontario to take a job as a reporter
+              for the <em>Toronto Star</em> newspaper. He continues to write for
+              the paper after moving to Chicago later in the year.
+            </div>
+          </li>
+          <li class="media mt-5">
+            <i class="fas fa-ring display-2 mr-5"></i>
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">
+                Sep 3, 1921: Hemingway's First Marriage
+              </h5>
+              Hemingway marries Elizabeth Hadley Richardson. She turns out to be
+              the first of four wives.
+            </div>
+          </li>
+          <li class="media mt-5">
+            <a data-toggle="modal" data-target="#myModal3"
+              ><img
+                class="mr-3 img-timeline-1"
+                src="https://www.usflags.com/pub/media/catalog/product/cache/dcb81d4ae761db357a9a38181bc1eb2e/0/0/0002263.jpeg"
+                alt="French Flag"
+            /></a>
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">
+                Dec 8, 1921: Parisian Expat
+              </h5>
+              The newly married Hemingways set sail for Paris, France. Ernest's
+              friend Sherwood Anderson has recommended Paris to Hemingway,
+              saying his pal will like the expatriate scene there. Ernest works
+              as a foreign correspondent for the Toronto Star and soon falls in
+              with a circle of writers and artists that includes Gertrude Stein
+              and Ezra Pound.
+            </div>
+          </li>
+          <li class="media mt-5">
+            <i class="fas fa-book display-2 mr-5"></i>
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">
+                1923: Hemingway's First Publication
+              </h5>
+              Hemingway's first book, <em>Three Stories and Ten Poems</em>, is
+              published. In the same year, Hemingway brings his pregnant wife to
+              watch a bullfight in Pamplona, Spain, hoping it will toughen up
+              their unborn son. Hemingway's first child, John "Jack" Hemingway,
+              is born on 10 October… but it's unclear what influence the bulls
+              had on him.
+            </div>
+          </li>
+          <li class="media mt-5">
+            <i class="far fa-handshake display-2 mr-5"></i>
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">
+                May 1925: Hemingway and Fitzgerald
+              </h5>
+              Ernest Hemingway meets
+              <a
+                target="_blank"
+                href="https://en.wikipedia.org/wiki/F._Scott_Fitzgerald"
+              ></a
+              >F. Scott Fitzgerald at the Dingo Bar in Paris, just two weeks
+              after the publication of
+              <a
+                target="_blank"
+                href="https://www.amazon.com/Great-Gatsby-F-Scott-Fitzgerald/dp/0743273567"
+                ><em>The Great Gatsby</em></a
+              >. Their friendship will later fall apart in spectacular fashion,
+              thanks to a toxic combination of professional rivalry and a feud
+              between Hemingway and Fitzgerald's wife Zelda.
+            </div>
+          </li>
+          <li class="media mt-5">
+            <i class="fas fa-book display-2 mr-5"></i>
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">1926: <em>The Sun Also Rises</em></h5>
+              Hemingway's first novel,
+              <a
+                target="_blank"
+                href="https://www.amazon.com/Sun-Also-Rises-Hemingway-Library/dp/15011219"
+                ><em>The Sun Also Rises</em></a
+              >, is published. The novel is critically acclaimed and
+              commercially successful.
+            </div>
+          </li>
+          <li class="media mt-5">
+            <i class="fas fa-heart-broken display-2 mr-5"></i>
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">
+                1927: Divorce and Remarriage
+              </h5>
+              Ernest Hemingway divorces Elizabeth Hadley on 4 April. One month
+              later he marries Pauline Pfeiffer, a fashion writer. The same year
+              sees publication of his short story collection
+              <em>Men Without Women</em>.
+            </div>
+          </li>
+          <li class="media mt-5">
+            <i class="fas fa-baby-carriage display-2 mr-5"></i>
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">
+                1928: Key West
+              </h5>
+              Hemingway and Pauline leave Paris and move to a house in Key West,
+              Florida. Ernest lives there on and off through the 1950s and
+              completes the majority of his life's writing at the house. The
+              couple's son Patrick is born on 28 June. Hemingway's father
+              Clarence commits suicide on 6 December.
+            </div>
+          </li>
+          <li class="media mt-5">
+            <i class="fas fa-book display-2 mr-5"></i>
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">1929: <em>A Farewell to Arms</em></h5>
+              <a
+                target="_blank"
+                href="https://www.amazon.com/Farewell-Arms-Ernest-Hemingway/dp/0684801469"
+                ><em>A Farewell to Arms</em></a
+              >
+              is published. The novel's success makes Hemingway financially
+              independent.
+            </div>
+          </li>
+          <li class="media mt-5">
+            <i class="fas fa-baby-carriage display-2 mr-5"></i>
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">
+                Nov 12, 1931: Birth of Gregory Hemingway
+              </h5>
+              Ernest Hemingway's third and last child, Gregory Hemingway, is
+              born. Hemingway calls the boy "Gig"; in adulthood, as a
+              cross-dresser, Gregory chooses to call himself Gloria. This
+              enrages his ultra-macho father.<em>
+                This could stem from earlier childhood experiences and deep
+                hatred of his mother. Source of list should not downplay this.
+              </em>
+            </div>
+          </li>
+          <li class="media mt-5">
+            <i class="fas fa-book display-2 mr-5"></i>
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">1932: <em>Death in the Afternoon</em></h5>
+              Hemingway goes to Spain to research bullfighting for
+              <em>Death in the Afternoon</em>, his critically lauded nonfiction
+              book on the subject.
+            </div>
+          </li>
+          <li class="media mt-5">
+            <i class="fab fa-safari display-2 mr-5"></i>
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">1933: African Safari</h5>
+              Pauline and Ernest travel to Kenya for a ten-week safari.
+              Hemingway falls in love with the continent. His subsequent trips
+              there inspire many works of fiction and nonfiction, including the
+              1935 book <em>Green Hills of Africa</em> and the short stories
+              "The Snows of Kilimanjaro" and "The Short Happy Life of Francis
+              Macomber."
+            </div>
+          </li>
+          <li class="media mt-5">
+            <i class="far fa-newspaper display-2 mr-5"></i>
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">
+                1937: Reports from the Spanish Civil War
+              </h5>
+              The year sees the publication of his novel
+              <em>To Have and Have Not</em>. Hemingway travels to Spain to
+              report on Spanish Civil War for the North American Newspaper
+              Alliance. He develops a strong anti-Franco stance and narrates the
+              antifascist propaganda film "The Spanish Earth."
+            </div>
+          </li>
+          <li class="media mt-5">
+            <i class="fas fa-book display-2 mr-5"></i>
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">
+                1938: <em>The Fifth Column and the First Forty-Nine Stories</em>
+              </h5>
+              "The Fifth Column," Hemingway's only full-length play, and the
+              first 49 short stories of his career are published in the aptly
+              named book
+              <em>The Fifth Column and the First Forty-Nine Stories</em>.
+            </div>
+          </li>
+          <li class="media mt-5">
+            <i class="fas fa-heart-broken display-2 mr-5"></i>
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">
+                1940: Divorce and Remarriage, Again
+              </h5>
+              Hemingway divorces Pauline on 4 November. Less than three weeks
+              later, he marries the journalist Martha Gellhorn. The couple
+              settles in Finca Vigia, the Cuban estate where Hemingway will
+              live, off and on, for twenty years. The Spanish Civil War novel
+              <a
+                target="_blank"
+                href="https://www.amazon.com/For-Whom-the-Bell-Tolls/dp/B000FIHM3A/ref=sr_1_1?keywords=for+whom+the+bell+tolls&qid=1573913817&sr=8-1"
+                ><em>For Whom the Bell Tolls</em></a
+              >
+              is published in the same year.
+            </div>
+          </li>
+          <li class="media mt-5">
+            <i class="fas fa-medal display-2 mr-5"></i>
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">
+                1940: Submarine Hunter
+              </h5>
+              The United States enters World War II. Hemingway volunteers for
+              the Navy, outfitting his fishing boat <em>Pilar</em> with guns to
+              hunt for German submarines off the coast of Cuba. Though he never
+              fires at one, the military will still award him a Bronze Star for
+              his service in 1947.
+            </div>
+          </li>
+          <li class="media mt-5">
+            <i class="far fa-newspaper display-2 mr-5"></i>
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">
+                1944: Professional Rivalry With Martha Gellhorn
+              </h5>
+              At his wife's urging, Hemingway goes to Europe as a war
+              correspondent for <em>Collier's</em> magazine. Professional
+              rivalry with Martha, who is also an accomplished war
+              correspondent, soon leads to the breakup of their marriage.
+            </div>
+          </li>
+          <li class="media mt-5">
+            <i class="fas fa-heart-broken display-2 mr-5"></i>
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">
+                Dec 21, 1945: Third Divorce
+              </h5>
+              Ernest Hemingway divorces Martha Gellhorn.
+            </div>
+          </li>
+          <li class="media mt-5">
+            <i class="fas fa-ring display-2 mr-5"></i>
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">
+                1946: Marriage to Mary Welsh
+              </h5>
+              Ernest marries another war correspondent, Mary Welsh, his fourth
+              and final wife, on 14 March. On 19 August, she miscarries due to
+              an ectopic pregnancy. The couple will produce no children
+              together.
+            </div>
+          </li>
+          <li class="media mt-5">
+            <i class="fas fa-book display-2 mr-5"></i>
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">
+                1950: <em>Across the River and Into the Trees</em>
+              </h5>
+              Hemingway's novel <em>Across the River and Into the Trees</em> is
+              published. It is the most poorly reviewed novel of his career.
+            </div>
+          </li>
+          <li class="media mt-5">
+            <i class="fas fa-skull-crossbones display-2 mr-5"></i>
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">
+                Jun 28, 1951: Death of Hemingway's Mother
+              </h5>
+              Hemingway's mother Grace dies.
+            </div>
+          </li>
+          <li class="media mt-5">
+            <i class="fas fa-book display-2 mr-5"></i>
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">
+                Sep 1, 1952: <em>The Old Man and the Sea</em>
+              </h5>
+              The novella
+              <a
+                target="_blank"
+                href="https://www.amazon.com/Old-Man-Sea-Ernest-Hemingway/dp/0684801221"
+                ><em>The Old Man and the Sea</em></a
+              >
+              is published in <em>Life</em> magazine. The story of Santiago the
+              fisherman brings Hemingway commercial and critical success.
+            </div>
+          </li>
+          <li class="media mt-5">
+            <i class="fas fa-award display-2 mr-5"></i>
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">
+                1953: Pulitzer Prize
+              </h5>
+              Ernest Hemingway is awarded the Pulitzer Prize for
+              <a
+                target="_blank"
+                href="https://www.amazon.com/Old-Man-Sea-Ernest-Hemingway/dp/0684801221"
+                ><em>The Old Man and the Sea</em></a
+              >.
+            </div>
+          </li>
+          <li class="media mt-5">
+            <i class="fas fa-award display-2 mr-5"></i>
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">
+                Dec 10, 1954: Nobel Prize
+              </h5>
+              Ernest Hemingway is awarded the Nobel Prize in Literature,
+              becoming the fifth American author to receive the award. Hemingway
+              is still recovering from serious injuries sustained in two
+              separate plane crashes and a bushfire accident earlier in the year
+              and is unable to travel to Stockholm to receive the award. The
+              American ambassador John C. Cabot accepts the prize on his behalf
+              and reads his speech aloud.
+            </div>
+          </li>
+          <li class="media mt-5">
+            <i class="fas fa-running display-2 mr-5"></i>
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">
+                1961: Exodus From Cuba
+              </h5>
+              Hemingway leaves Cuba forever following the 1959 revolution in
+              which his acquaintance Fidel Castro leads communist
+              revolutionaries to power. The Cuban government takes possession of
+              his home, Finca Vigia, and will later turn it into a Hemingway
+              museum.
+            </div>
+          </li>
+          <li class="media mt-5">
+            <i class="fas fa-skull-crossbones display-2 mr-5"></i>
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">
+                Jul 2, 1961: Suicide
+              </h5>
+              Suffering from depression, alcoholism, and numerous physical
+              ailments, Ernest Hemingway commits suicide with a shotgun at his
+              home in Ketchum, Idaho. He receives a Catholic burial, as the
+              church judges him not to have been in his right mind at the time
+              of his suicide. He is buried in Ketchum.
+            </div>
+          </li>
+          <li class="media mt-5">
+            <i class="fas fa-book display-2 mr-5"></i>
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">1970: <em>Islands in the Stream</em></h5>
+              Hemingway's novel <em>Islands in the Stream</em> is published
+              posthumously.
+            </div>
+          </li>
+          <li class="media mt-5">
+            <i class="fas fa-book display-2 mr-5"></i>
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">1972: <em>The Nick Adams Stories</em></h5>
+              Hemingway's short story collection
+              <em>The Nick Adams Stories</em> is published posthumously.
+            </div>
+          </li>
+          <li class="media mt-5">
+            <i class="fas fa-book display-2 mr-5"></i>
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">1986: <em>The Garden of Eden</em></h5>
+              Hemingway's novel <em>The Garden of Eden</em> is published
+              posthumously.
+            </div>
+          </li>
+          <li class="media mt-5">
+            <i class="fas fa-book display-2 mr-5"></i>
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">1999: <em>True at First Light</em></h5>
+              <em>True at First Light: a Fictional Memoir</em>, edited by
+              Hemingway's son Patrick, is published posthumously.
+            </div>
+          </li>
+        </ul>
+      </section>
+      <footer id="footer" class="container-fluid border-dark rounded">
+        <h1 class="display-4 text-center text-white">Thanks for Reading!</h1>
+        <p class="lead text-white text-center">
+          This is a project submitted for
+          <a target="_blank" href="https://www.freecodecamp.org"
+            >freecodecamp.org</a
+          >. Sources used were
+          <a target="_blank" href="https://www.wikipedia.org">Wikipedia</a> and
+          <a
+            target="_blank"
+            href="https://www.shmoop.com/ernest-hemingway/timeline.html"
+            >shmoop.com</a
+          >. To see other projects completed by me
+          <a target="_blank" href="https://www.widesvs2.com">click here!</a>
+        </p>
+        <ul class="list-unstyled"></ul>
+      </footer>
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
